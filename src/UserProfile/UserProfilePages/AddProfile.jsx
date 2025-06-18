@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { MyGarage } from "../../Context/AuthContext";
-import { _DB } from "../../backend/firebase";
+import { _DB } from "../../Backend/Firebase";
 import { doc, setDoc } from "firebase/firestore";
 
 const AddProfile = () => {
@@ -12,6 +12,7 @@ const AddProfile = () => {
 
   let { uid, email, photoURL, displayName } = authuser;
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   let [data, setData] = useState({
     firstname: "",
     lastname: "",
