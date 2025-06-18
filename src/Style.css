@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer utilities {
+    input:-webkit-autofill {
+      background-color: transparent !important;
+      -webkit-box-shadow: 0 0 0px 1000px #0F172A inset !important;
+      -webkit-text-fill-color: white !important;
+    }
+  }
+  
